@@ -1,12 +1,9 @@
 //COMO Y EL DONDE SE GUARDAN LOS DATOS
-import{schema, model} from "mongose";
+import{Schema, model} from "mongoose";
 
-const Eschemas = new Schema({
-    name:{
-        type:String
-    },
-    Edad:{
-        type:Number
-    }
-})
-export const Modelo = new model("Tabla de alumnos", Eschema)
+const Esquema = new Schema({
+     name: String,
+     edad: Number
+});
+
+export const modelo = model("Tabla de alumnos", Esquema)

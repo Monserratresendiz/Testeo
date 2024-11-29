@@ -1,10 +1,10 @@
-import { modelo } from "../models/alumnos.model";
+import { modelo } from "../models/alumnos.model.js";
 
 modelo.create({
     Name:"Rodolfo",
     edad:25
-})
+});
 
-export const test1 = ()=>{
+export const test = ()=>{
     console.log("Funciona el controlador")
-}
+};
